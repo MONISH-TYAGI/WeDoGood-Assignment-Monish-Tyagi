@@ -106,6 +106,7 @@ app.get("/dashboard", async (req, res) => {
     fundsUtilized: data[0].fundsUtilized
   });
 });
-app.listen(4000, () =>
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () =>
   console.log("Backend running on port 4000")
 );
