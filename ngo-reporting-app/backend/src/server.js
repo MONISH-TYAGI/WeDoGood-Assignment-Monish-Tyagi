@@ -5,7 +5,7 @@ import csv from "csv-parser";
 import fs from "fs";
 import { v4 as uuidv4 } from "uuid";
 import dotenv from "dotenv";
-
+dotenv.config({ path: "../.env" });
 import connectDB from "./db.js";
 import Report from "./models/Report.js";
 import Job from "./models/Job.js";
